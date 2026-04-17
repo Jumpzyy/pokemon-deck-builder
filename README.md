@@ -1,65 +1,90 @@
-# 🎴 Pokémon TCG Live Deck Tool
+# 🎴 Pokémon TCG Live Deck Builder
 
-![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)
-![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
-![License](https://img.shields.io/badge/License-MIT-green)
-
-A powerful Streamlit web app for **Pokémon Trading Card Game Live** players to analyze collections, build competitive decks, and explore meta strategies across Standard, Expanded, and GLC formats.
+> Build competitive Pokémon TCG Live decks instantly from your collection — powered by meta analysis, automation, and smart deck scoring.
 
 ---
 
-## 🚀 Live App
-
+## 🌐 Live App
 👉 https://pokemon-deck-builder-6ud4hm3feyp5yewkkc2kkl.streamlit.app/
 
 ---
 
-## ✨ Features
+## ⚡ What is this?
 
-### 🏆 Meta Deck Browser
-- Standard format meta decks
-- Expanded format archetypes
-- Gym Leader Challenge (GLC) decks
-- Tier ratings (S / A+ / A / B+)
-- Full 60-card legality validation
+**Pokémon TCG Live Deck Builder** is a smart Streamlit web app that analyzes your card collection and automatically builds **meta-competitive decks** for Standard, Expanded, and GLC formats.
+
+It acts like a personal deck assistant:
+- Reads your collection
+- Matches it to real meta decks
+- Scores what you can actually build
+- Exports ready-to-play decks instantly
 
 ---
 
-### 🧠 Smart Deck Builder
-- Paste your full Pokémon TCG Live collection
-- Automatically parses cards
+## 🚀 Core Features
+
+### 🏆 Meta Deck Engine
+- Standard / Expanded / GLC support
+- Tier-ranked decks (S / A+ / A / B+)
+- Fully legal 60-card deck validation
+- Competitive strategies included
+
+---
+
+### 🧠 Smart AI Deck Builder
+- Paste your Pokémon TCG Live collection
+- Auto-parses and normalizes cards
 - Builds best possible competitive decks
 - Scores decks based on:
-  - Card ownership
+  - Ownership percentage
   - Meta relevance
-  - Core Pokémon presence
+  - Core Pokémon availability
 
 ---
 
-### 📊 Collection Analysis
-- Fuzzy card matching (fixes spelling differences)
+### 📊 Collection Intelligence
+- Fuzzy card matching (fixes naming differences)
 - Missing card detection
-- Ownership tracking per deck
-- Deck completion percentage
+- Deck completion tracking
+- Real-time ownership breakdown
 
 ---
 
-### 📤 Export System
+### 📤 Instant Export System
 - One-click export to Pokémon TCG Live format
 - Clean `.txt` download
-- Ready for import into game client
+- Ready for in-game import
 
 ---
 
-### 🔥 Deck Intelligence
-- Auto-ranks best decks from your collection
-- Shows buildability score (%)
-- Predicts deck strength vs meta
+## 🧠 How It Works
+
+1. Paste your collection export from Pokémon TCG Live  
+2. The engine parses and normalizes your cards  
+3. It compares your collection to meta decks  
+4. It calculates buildability + win potential  
+5. You get your **top 4 strongest decks instantly**
 
 ---
 
-## 🛠️ How to Run Locally
+## 🛠️ Local Setup
 
+### 1. Clone repository
 ```bash
-pip install streamlit
-streamlit run ultimate_pokemon_tool.py
+git clone https://github.com/Jumpzyy/pokemon-deck-builder.git
+cd pokemon-deck-builder
+2. Create virtual environment
+python -m venv venv
+3. Activate environment
+
+Windows
+
+venv\Scripts\activate
+
+Mac/Linux
+
+source venv/bin/activate
+4. Install dependencies
+pip install -r requirements.txt
+5. Run the app
+python -m streamlit run ultimate_pokemon_tool.py
