@@ -62,4 +62,4 @@ A powerful Streamlit web app for **Pokémon Trading Card Game Live** players to 
 
 ```bash
 pip install streamlit
-streamlit run app.py
+streamlit run ultimate_pokemon_tool.py
